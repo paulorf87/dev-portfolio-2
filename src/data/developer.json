@@ -1,0 +1,15 @@
+{
+    "profile":{
+        "intro-title":"Developer Portfolio",
+        "intro-message":"I am a passionate, industrial engineer and self-taught computer programmer, who believes in the merge of IT (Information Technology) and OT (Operational Technology) as the way for the future. I am continuously improving my skills in Front-end and Back-end development, among other computer science fields, in order to build optimized soultions for businesses and non-profit endeavors.",
+        "role":"Front End | Full Stack", 
+        "background-image":"https://nsc.crawford.anu.edu.au/files/uploads/nsc_crawford_anu_edu_au/2020-11/screen_shot_2020-11-02_at_11.26.08_am.png"
+    },
+    "skills":[
+            {"name":"FrontEnd Development", "score":0.7, "skills":["React JS", "HTML, CSS, JS","Styled Components (JS)"]},     
+            {"name":"BackEnd Development", "score":0.65, "skills":["Node JS", "Express","NoSQL - MongoDB"]},
+            {"name":"Data Analysis", "score":0.5, "skills":["Power BI Data Visualization", "Python for Data Science","Python for Machine Learning"]},  
+            {"name":"Cloud Services", "score":0.4, "skills":["AWS Cloud Services", "AWS Serverless","AWS DNS Computing"]},   
+            {"name":"Agile Development", "score":0.5, "skills":["AWS Cloud Services", "AWS Serverless","AWS DNS Computing"]}   
+    ]
+}
