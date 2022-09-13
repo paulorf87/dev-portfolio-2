@@ -21,6 +21,10 @@ const GlobalStyle = createGlobalStyle`
     h1,h2,h3,h4 {
         color:${({theme})=>theme.text.primary}; 
     }
+    h3 {
+        /* font-size: 1.1vw; */
+        font-size: clamp(16px,1.1vw,24px);
+    }
 
     ::-webkit-scrollbar {
         width:10px;

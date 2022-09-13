@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 import Avatar from "../General/Avatar";
 import ThemeSelector from "../General/ThemeSelector";
+import Strengths from "../Strengths/Strengths";
 import SocialMedia from "../General/SocialMedia";
 
 import { CvIcon, GitHubIcon, LinkedInIcon } from "./Icons";
@@ -30,11 +31,12 @@ const SidenavHeader = () => {
         <h2>Paulo <span>Ferro</span></h2>
         <Avatar size={"100px"} src={"https://pickaface.net/gallery/avatar/Eminero5439f53ce66cd.png"}/>
         <ThemeSelector/>
-        <SocialMedia>
+        <Strengths/>
+        {/* <SocialMedia>
             <LinkedInIcon/>
             <GitHubIcon/>
             <CvIcon/>
-        </SocialMedia>
+        </SocialMedia> */}
     </SidenavHeaderStyled>
 }
 

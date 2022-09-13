@@ -4,13 +4,14 @@ import {useSelector} from "react-redux";
 import SidenavHeader from "../components/Sidenav/SidenavHeader";
 import SkillsList from "../components/Skills/SkillsList";
 import MainHeroBanner from "../components/Main/MainHeroBanner";
+import Framework from "../components/Frameworks/Frameworks";
 
 
 const HomeStyled = styled.div`
     
     margin: 0 auto;
-    min-height: 100vh;
     max-width: calc(1440px + 2*400px);
+    width:95%;
     display: grid;
     grid-template-columns: 2fr 8fr 2fr;
     grid-template-rows: 2fr 8fr 2fr;
@@ -31,6 +32,7 @@ const HomeStyled = styled.div`
     .right-sidebar{
         background-color: ${({theme})=>theme.colors.secondary};
         grid-area:rightbar;
+        padding:4px;
     }
     .content{
         background-color: ${({theme})=>theme.colors.secondary};
@@ -65,7 +67,9 @@ const Home = () => {
             <SkillsList/>
         </aside>
         <main className="content"></main>
-        <aside className="right-sidebar"></aside>
+        <aside className="right-sidebar">
+            <Framework/>
+        </aside>
         <footer className="footer"></footer>
     </HomeStyled>
 }
