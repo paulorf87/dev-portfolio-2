@@ -1,13 +1,15 @@
 {
     "profile":{
-        "intro-title":"Engineer Portfolio",
+        "intro-title":"Engineer Portfolio (Production-Automation)",
         "intro-message":"I am a passionate, industrial engineer and self-taught computer programmer, who believes in the merge of IT (Information Technology) and OT (Operational Technology) as the way for the future. I am continuously improving my skills in Front-end and Back-end development, among other computer science fields, in order to build optimized soultions for businesses and non-profit endeavors.",
         "role":"Industrial Engineering | Automation", 
-        "background-image":"https://internetofbusiness.com/wp-content/uploads/2018/10/INdustrialRobotsiStock-640x366.jpg"
+        "background-image":"/images/eng-banner.svg"
     },
     "skills":[
-        {"name":"Industrial Engineering", "score":0.9, "skills":["React JS", "HTML, CSS, JS","Styled Components (JS)"]},     
-        {"name":"Automation", "score":0.75, "skills":["Node JS", "Express","NoSQL - MongoDB"]},
-        {"name":"Lean Six Sigma", "score":0.7, "skills":["Power BI Data Visualization", "Python for Data Science","Python for Machine Learning"]}  
+        {"name":"Lean Manufacturing", "score":0.8, "skills":[]},     
+        {"name":"Six Sigma", "score":0.75, "skills":[]},
+        {"name":"Industrial Automation", "score":0.7, "skills":[]},   
+        {"name":"Engineering Design", "score":0.7, "skills":[]},    
+        {"name":"IoT & IIoT", "score":0.7, "skills":[]}   
     ]
 }

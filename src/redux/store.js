@@ -1,14 +1,14 @@
 import { configureStore } from "@reduxjs/toolkit";
 
-import { themeReducer,
-    dataReducer,  
-    skillsReducer, infoReducer } from "./reducers";
+import { 
+    themeReducer,
+    dataReducer, 
+    projectsReducer} from "./reducers";
 
 export const store = configureStore({
     reducer:{
         theme:themeReducer, 
-        skills:skillsReducer, 
-        info:infoReducer, 
-        data:dataReducer
+        data:dataReducer, 
+        projects:projectsReducer
     }
 }); 

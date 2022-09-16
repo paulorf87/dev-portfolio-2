@@ -6,16 +6,26 @@ const StrengthsStyled = styled.div`
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap:8px;
-    background-color: #000;
-    opacity: 0.5;
     padding: 8px;
-    border-radius: 5px;
-
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        top:0;
+        width: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        opacity: 0.5;
+        border-radius: 5px;
+    }
     .strength {
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
+        z-index: 10;
     }
     .icon {
         width: 35px;
@@ -37,20 +47,24 @@ const StrengthsStyled = styled.div`
 `
 
 const Strengths = () => {
-    return <StrengthsStyled>
-        <div className="strength">
-            <CustomIcon src={"/images/engine.svg"}/>
-            <p>Reverse Engineering</p>
-        </div>
-        <div className="strength">
-            <CustomIcon src={"/images/book.svg"}/>
-            <p>Fast Learning</p>
-        </div>
-        <div className="strength">
-            <CustomIcon src={"/images/idea.svg"}/>
-            <p>Curious</p>
-        </div>
-    </StrengthsStyled>
+    return <>
+        <h3 style={{textAlign:"left", 
+        width:"100%", marginBottom:8}}>Strengths</h3>
+        <StrengthsStyled>
+            <div className="strength">
+                <CustomIcon src={"/images/engine.svg"}/>
+                <p>Reverse Engineering</p>
+            </div>
+            <div className="strength">
+                <CustomIcon src={"/images/book.svg"}/>
+                <p>Fast Learning</p>
+            </div>
+            <div className="strength">
+                <CustomIcon src={"/images/idea.svg"}/>
+                <p>Curious</p>
+            </div>
+        </StrengthsStyled>
+    </>
 
 }
 

@@ -1,9 +1,10 @@
 import { themeActions, 
     dataActionTypes,
-    skillActionTypes, 
-    infoActionTypes } from "../actions";
+    projectsActionTypes } from "../actions";
 import developerData from "../../data/developer.json";
 import engineerData from "../../data/engineer.json";
+
+import projects from "../../data/projects.json"; 
 
 const INITIAL_STATE = {
     isDevelopmentTheme:true   
@@ -28,25 +29,12 @@ export const dataReducer = (state, action) => {
             return developerData; 
     }
 }
-
-export const skillsReducer = (state = INITIAL_STATE, action) => {
+export const projectsReducer = (state, action) => {
     switch(action.type) {
-        case skillActionTypes.GET_DEVELOPER_SKILLS:
-            return developerData.skills;
-        case skillActionTypes.GET_ENGINEERING_SKILLS:
-            return engineerData.skills;
+        case projectsActionTypes.GET_ENGINEER_PROJECTS_DATA:
+        case projectsActionTypes.GET_DEVELOPER_PROJECTS_DATA:
+        case projectsActionTypes.GET_PROJECTS_DATA:
         default:
-            return developerData.skills;
-    }    
-}
-
-export const infoReducer = (state, action) => {
-    switch(action.type) {
-        case infoActionTypes.GET_DEVELOPER_INFO:
-            return developerData;
-        case infoActionTypes.GET_ENGINEER_INFO:
-            return engineerData;
-        default:
-            return developerData;
+            return projects; 
     }
 }

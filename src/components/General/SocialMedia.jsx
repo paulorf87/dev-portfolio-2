@@ -1,4 +1,8 @@
 import styled from "styled-components";
+
+import { CvIcon, GitHubIcon, LinkedInIcon } from "./Icons";
+
+
 const SocialMediaStyled = styled.div`
     display: flex;
     flex-direction: row;
@@ -14,10 +18,15 @@ const SocialMediaStyled = styled.div`
     }
 `
 
-const SocialMedia = ({children}) => {
-    return <SocialMediaStyled>
-        {children}
-    </SocialMediaStyled>
+const SocialMedia = () => {
+    return <>
+        <h3>Links</h3>
+        <SocialMediaStyled>
+                <LinkedInIcon/>
+                <GitHubIcon/>
+                <CvIcon/>
+        </SocialMediaStyled>
+    </> 
 }
 
 export default SocialMedia; 

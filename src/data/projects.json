@@ -1,0 +1,39 @@
+{
+    "developer":[
+        {
+            "title":"Data Analytics", 
+            "intro":"Dynamic data dashboards that provide strategic insigt.",
+            "link":"/dashboards",
+            "imgUrl":"/images/mining-dashboard.png", 
+            "tags":[
+                {"tag":"#Analytics","topic":"developer"},
+                {"tag":"#DataVisualization","topic":"developer"},
+                {"tag":"#Dashboards","topic":"developer"}
+            ]
+        },
+        {
+            "title":"Single Page Applications", 
+            "intro":"Create SPA web applications using React JS.",
+            "link":"/spa",
+            "imgUrl":"https://www.netsolutions.com/insights/wp-content/uploads/2020/02/single-page-applications-traditional-page-cycle-vs-spa-lifecycle.jpg",
+            "tags":[
+                {"tag":"#ReactJS","topic":"developer"}, 
+                {"tag":"#FrontendDev","topic":"developer"}, 
+                {"tag":"#WebDev","topic":"developer"}
+            ]
+        }
+    ], 
+    "engineer":[
+        {
+            "title":"Industrial IoT Automation", 
+            "intro":"Monitor Industrial systems in real time. ",
+            "link":"/iot",
+            "imgUrl":"https://www.i-scoop.eu/wp-content/uploads/2016/11/Industrial-Internet-of-Things.gif",
+            "tags":[
+                {"tag":"#Iot","topic":"engineer"}, 
+                {"tag":"#IndustrialAutomation","topic":"engineer"},
+                {"tag":"#DevOps", "topic":"developer"} 
+            ]
+        } 
+    ]
+}

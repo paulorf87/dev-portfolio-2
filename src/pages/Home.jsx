@@ -5,12 +5,15 @@ import SidenavHeader from "../components/Sidenav/SidenavHeader";
 import SkillsList from "../components/Skills/SkillsList";
 import MainHeroBanner from "../components/Main/MainHeroBanner";
 import Framework from "../components/Frameworks/Frameworks";
-
+import Footer from "../components/Footer/Footer";
+import ProjectGrid from "../components/ProjectsGrid/ProjectsGrid";
+import SocialMedia from "../components/General/SocialMedia";
 
 const HomeStyled = styled.div`
-    
     margin: 0 auto;
-    max-width: calc(1440px + 2*400px);
+    padding: 8px 0;
+    height: 100vh;
+    max-width: 1440px;
     width:95%;
     display: grid;
     grid-template-columns: 2fr 8fr 2fr;
@@ -19,28 +22,36 @@ const HomeStyled = styled.div`
     "leftbar content rightbar"
     "footer footer rightbar";
     gap:16px;
-    
     .header {
         background-color: ${({theme})=>theme.colors.secondary};
         grid-area: header;
+        border-radius: 25px;
     }
     .left-sidebar{
         background-color: ${({theme})=>theme.colors.secondary};
         grid-area:leftbar;
         padding:0 32px;
+        border-radius: 10px;
     }
     .right-sidebar{
         background-color: ${({theme})=>theme.colors.secondary};
         grid-area:rightbar;
-        padding:4px;
+        padding:32px 4px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .content{
+        padding:8px;
         background-color: ${({theme})=>theme.colors.secondary};
         grid-area:content;
+        border-radius: 10px;
     }
     .footer{
         background-color: ${({theme})=>theme.colors.secondary};
         grid-area:footer;
+        border-radius: 10px;
     }
     @media  (max-width:400px) {
         grid-template-columns: 1fr;
@@ -66,11 +77,16 @@ const Home = () => {
             <SidenavHeader/>
             <SkillsList/>
         </aside>
-        <main className="content"></main>
+        <main className="content">
+            <ProjectGrid/>
+        </main>
         <aside className="right-sidebar">
+            <SocialMedia/>
             <Framework/>
         </aside>
-        <footer className="footer"></footer>
+        <footer className="footer">
+            <Footer/>
+        </footer>
     </HomeStyled>
 }
 
