@@ -61,7 +61,7 @@ const Strengths = () => {
             </div>
             <div className="strength">
                 <CustomIcon src={"/images/idea.svg"}/>
-                <p>Curious</p>
+                <p>Curiosity</p>
             </div>
         </StrengthsStyled>
     </>

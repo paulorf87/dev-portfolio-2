@@ -14,7 +14,7 @@
         {
             "title":"Single Page Applications", 
             "intro":"Create SPA web applications using React JS.",
-            "link":"/spa",
+            "link":"/singlepage",
             "imgUrl":"https://www.netsolutions.com/insights/wp-content/uploads/2020/02/single-page-applications-traditional-page-cycle-vs-spa-lifecycle.jpg",
             "tags":[
                 {"tag":"#ReactJS","topic":"developer"}, 

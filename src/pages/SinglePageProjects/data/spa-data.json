@@ -1,0 +1,18 @@
+[
+  {
+    "link":"https://paulorf87.github.io/demo-webpage-1", 
+    "imgUrl":"/images/spas/spa-2.png", 
+    "tags":[
+      {"tag":"HTML & CSS","topic":"developer"},
+      {"tag":"Web-development","topic":"developer"}
+    ]
+  }, 
+   {
+    "link":"https://paulorf87.github.io/demo-webpage-2", 
+    "imgUrl":"/images/spas/spa-1.png", 
+    "tags":[
+      {"tag":"HTML & CSS","topic":"developer"},
+      {"tag":"Landing-page","topic":"developer"}
+    ]
+  }  
+]

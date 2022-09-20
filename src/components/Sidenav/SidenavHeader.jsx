@@ -27,7 +27,7 @@ const SidenavHeader = () => {
 
     return <SidenavHeaderStyled>
         <h2>Paulo <span>Ferro</span></h2>
-        <Avatar size={"100px"} src={"https://pickaface.net/gallery/avatar/Eminero5439f53ce66cd.png"}/>
+        <Avatar size={"100px"} src={"/images/me-cartoon.png"}/>
         <ThemeSelector/>
         <Strengths/>
         

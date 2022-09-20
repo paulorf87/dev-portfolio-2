@@ -36,9 +36,12 @@ const Framework = () => {
             <CustomIcon src={"/images/redux.svg"}/>
             <CustomIcon src={"/images/mongodb.svg"}/>
             <CustomIcon src={"/images/mysql.svg"}/>
+            <CustomIcon src={"/images/postgres.svg"}/>
             <CustomIcon src={"/images/python.svg"}/>
             <CustomIcon src={"/images/docker.svg"}/>
             <CustomIcon src={"/images/git.svg"}/>
+            <CustomIcon src={"/images/figma.svg"}/>
+            <CustomIcon src={"/images/cplus.svg"}/>
         </div>
 
     </FrameworkStyled>

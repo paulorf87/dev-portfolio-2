@@ -5,6 +5,7 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Dashboards from "./pages/DashboardPage/Dashboards";
 import GlobalStyle from "./styles/global";
+import SinglePageProjects from "./pages/SinglePageProjects/SinglePageProjects";
 
 import { engineer, developer } from "./styles/themes";
 
@@ -16,6 +17,7 @@ const App = () => {
         <Routes>
             <Route exact path="/" element={<Home/>}/>
             <Route path="/dashboards" element={<Dashboards/>}/>
+            <Route exact path="/singlepage" element={<SinglePageProjects/>}/>
             <Route path="*" element={<h1>Page Not Found!</h1>}/>
         </Routes>
     </ThemeProvider> 
