@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import Dashboards from "./pages/DashboardPage/Dashboards";
 import GlobalStyle from "./styles/global";
 import SinglePageProjects from "./pages/SinglePageProjects/SinglePageProjects";
+import IoTPage from "./pages/IoTPage/IoTPage";
 
 import { engineer, developer } from "./styles/themes";
 
@@ -18,6 +19,7 @@ const App = () => {
             <Route exact path="/" element={<Home/>}/>
             <Route path="/dashboards" element={<Dashboards/>}/>
             <Route exact path="/singlepage" element={<SinglePageProjects/>}/>
+            <Route exact path="/iot" element={<IoTPage/>}/>
             <Route path="*" element={<h1>Page Not Found!</h1>}/>
         </Routes>
     </ThemeProvider> 

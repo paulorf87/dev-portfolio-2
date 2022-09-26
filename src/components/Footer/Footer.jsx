@@ -31,7 +31,7 @@ const FooterStyled = styled.footer`
 const Footer = () => {
     return <FooterStyled>
         <p className="copyright">
-            © [name of rightsholder or rightsholders] [publication year]: e.g.  © XYZ Press and contributors 2022
+        © 2022 <u>Paulo Ferro</u>. All Rights Reserved.
         </p>
     </FooterStyled>
 }

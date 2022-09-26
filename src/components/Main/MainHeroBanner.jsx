@@ -5,7 +5,8 @@ const MainHeroBannerStyled = styled.div`
     align-items: center;
     justify-content: center;
     width: 100%;
-    min-height: 250px;
+    height: 100%;
+    padding:32px;
     position: relative;
     border-radius: 10px;
     overflow: hidden;

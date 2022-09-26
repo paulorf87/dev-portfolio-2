@@ -5,6 +5,7 @@ import SkillsGroup from "./SkillsGroup";
 
 const SkillsListStyled = styled.ul`
     margin-top    : 16px;
+    margin-bottom: 32px;
 `
 const SkillsList = () => {
     const {skills} = useSelector(state=>state.data); 

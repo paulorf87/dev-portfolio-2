@@ -3,6 +3,7 @@ import styled from "styled-components";
 const SkillsGroupStyled = styled.div`
     display: flex;
     flex-direction: column;
+    
     gap:8px;
     p {
         color:${({theme})=>theme.text.primary};

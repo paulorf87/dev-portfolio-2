@@ -12,12 +12,10 @@ import SocialMedia from "../components/General/SocialMedia";
 const HomeStyled = styled.div`
     margin: 0 auto;
     padding: 8px 0;
-    height: 100vh;
     max-width: 1440px;
     width:95%;
     display: grid;
     grid-template-columns: 2fr 8fr 2fr;
-    grid-template-rows: 2fr 8fr 2fr;
     grid-template-areas: "leftbar header header"
     "leftbar content rightbar"
     "footer footer rightbar";
