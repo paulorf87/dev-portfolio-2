@@ -16,7 +16,7 @@ const IoTSectionStyled = styled.section`
         font-weight: 300;
         margin-bottom: 32px;
     }
-    img {
+    img, video {
         margin-bottom: 32px;
     }
     p {
