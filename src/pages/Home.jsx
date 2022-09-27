@@ -1,3 +1,4 @@
+import { useState } from "react";
 import styled from "styled-components"; 
 import {useSelector} from "react-redux";
 
@@ -8,6 +9,7 @@ import Framework from "../components/Frameworks/Frameworks";
 import Footer from "../components/Footer/Footer";
 import ProjectGrid from "../components/ProjectsGrid/ProjectsGrid";
 import SocialMedia from "../components/General/SocialMedia";
+import Modal from "../components/Modal/Modal";
 
 const HomeStyled = styled.div`
     margin: 0 auto;
@@ -51,6 +53,16 @@ const HomeStyled = styled.div`
         grid-area:footer;
         border-radius: 10px;
     }
+
+    .contact-btn {
+        padding:8px 16px;
+        width: 80%;
+        background-color: ${({theme})=>theme.colors.accent};
+        border:none;
+        border-radius: 4px;
+        cursor:pointer;
+    }
+
     @media  (max-width:400px) {
         grid-template-columns: 1fr;
         grid-template-areas: "header"
@@ -66,6 +78,15 @@ const HomeStyled = styled.div`
 
 const Home = () => {
     const {profile} = useSelector(state=>state.data);
+    const [modalOpen, setModalOpen] = useState(false);
+    
+    const modalHandlerOpen = () => {
+        setModalOpen(true); 
+    }
+
+    const modalHandlerClose = () => {
+        setModalOpen(false);
+    }
 
     return <HomeStyled>
         <header className="header">
@@ -80,11 +101,13 @@ const Home = () => {
         </main>
         <aside className="right-sidebar">
             <SocialMedia/>
+            <button className="contact-btn" onClick={modalHandlerOpen}>Contact</button>
             <Framework/>
         </aside>
         <footer className="footer">
             <Footer/>
         </footer>
+        <Modal modalOpen={modalOpen} modalHandlerClose={modalHandlerClose}/>
     </HomeStyled>
 }
 
