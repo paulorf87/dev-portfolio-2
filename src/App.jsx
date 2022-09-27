@@ -7,6 +7,7 @@ import Dashboards from "./pages/DashboardPage/Dashboards";
 import GlobalStyle from "./styles/global";
 import SinglePageProjects from "./pages/SinglePageProjects/SinglePageProjects";
 import IoTPage from "./pages/IoTPage/IoTPage";
+import PageNotFound from "./components/General/PageNotFound";
 
 import { engineer, developer } from "./styles/themes";
 
@@ -20,7 +21,7 @@ const App = () => {
             <Route path="/dashboards" element={<Dashboards/>}/>
             <Route exact path="/singlepage" element={<SinglePageProjects/>}/>
             <Route exact path="/iot" element={<IoTPage/>}/>
-            <Route path="*" element={<h1>Page Not Found!</h1>}/>
+            <Route path="*" element={<PageNotFound/>}/>
         </Routes>
     </ThemeProvider> 
 }

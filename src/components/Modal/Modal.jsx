@@ -8,17 +8,35 @@ const ModalStyled = styled.dialog`
     left:0;
     right:0;
     bottom:0;
-    margin-top: 20%;
+    margin-top: 25vh;
     margin-left: auto;
     margin-right: auto;
-    padding: 16px;
+    padding: 16px 40px;
+    border-radius: 10px;
 
     h2 {
         color:#333;
     }
     p {
+        margin-top: 16px;
         color:#333;
     }
+    ul {
+        list-style-type: none;
+        margin-top: 16px;
+        li {
+            color:#333;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 8px;
+            img {
+                max-width: 24px;
+            }
+        }
+    }
+
     &::backdrop {
         background: linear-gradient(45deg, red, blue);
         opacity:.45;
@@ -58,8 +76,12 @@ const Modal = ({modalOpen, modalHandlerClose}) => {
     }
 
     return <ModalStyled ref={modalRef} onClick={modalHandlerClose}>
-        <h2>Contacts</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vel, esse in sapiente ipsam tempora quidem. Sunt et molestias veniam placeat, dicta assumenda delectus, voluptates rem dolorum, voluptatibus repellat pariatur?</p>    
+        <h2>Contact</h2>
+        <p>If you would like to know more about my work you can contact me at:</p>
+        <ul>
+            <li><img src="/images/phone.svg" alt=""/>+61 416 292 958</li>
+            <li><img src="/images/mail.svg" alt=""/>paulo@prmf-dev.com</li>
+        </ul>
     </ModalStyled>
 }
 

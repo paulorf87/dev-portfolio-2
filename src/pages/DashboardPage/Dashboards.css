@@ -31,16 +31,20 @@ body {
     padding:32px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: "dashboard dashboard dashboard navigation"
+    grid-template-areas: 
+    "header header header header"
+    "dashboard dashboard dashboard dashboard"
     "grid grid grid grid";
     gap:32px;
 }
 
-.navigation {
-    grid-area: navigation;
-    display: flex;
-    width: 100%;
-    background-color: var(--darker);
+.dashboard-page-header {
+    text-align: center;
+    grid-area: header;
+}
+
+.dashboard-page-header h1 {
+    font-size: 48px;
 }
 
 .dashboard {

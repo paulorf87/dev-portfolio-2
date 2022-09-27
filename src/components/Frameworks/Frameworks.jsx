@@ -23,7 +23,7 @@ const FrameworkStyled = styled.div`
 `
 const Framework = () => {
     return <FrameworkStyled>
-        <h3>Frameworks &<br/>Technologies</h3>
+        <h3>Frameworks &<br/>Technology Stacks</h3>
         <div className="framework-icons">
             <CustomIcon src={"/images/html.svg"}/>
             <CustomIcon src={"/images/css.svg"}/>

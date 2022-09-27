@@ -11,6 +11,10 @@ const SinglePageProjectsStyled = styled.main`
 
     .single-page-header {
         padding:32px 0;
+        text-align: center;
+        h1 {
+            font-size: 48px;
+        }
     }
     .single-page-grid {
         display: grid;

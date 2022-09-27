@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+
 import { CvIcon, GitHubIcon, LinkedInIcon } from "./Icons";
 
 
@@ -7,24 +8,28 @@ const SocialMediaStyled = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
-    * {
-        fill:${({theme})=>theme.colors.accent};
+    gap: 8px;
+    a {
+        display: flex;
+        align-items: center;
         width: 40px;
-        margin-left: 8px;
-        &:hover{
-            fill:#888;
-            cursor: pointer;
-        }
+    }
+    path {
+        fill:${({theme})=>theme.colors.accent}
     }
 `
 
 const SocialMedia = () => {
     return <>
-        <h3>Links</h3>
         <SocialMediaStyled>
-                <LinkedInIcon/>
-                <GitHubIcon/>
-                <CvIcon/>
+                <a href="https://www.linkedin.com/in/paulorf87" target="blank">
+                    <LinkedInIcon/></a>
+                <a href="https://github.com/paulorf87" target="blank">
+                    <GitHubIcon/>
+                </a>
+                <a href="/docs/dev-resume.pdf" target="blank">
+                    <CvIcon/>
+                </a>
         </SocialMediaStyled>
     </> 
 }

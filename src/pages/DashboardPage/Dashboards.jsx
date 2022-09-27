@@ -8,13 +8,15 @@ const DashboardsStyled = styled.div`
 const Dashboards = () => {
     return <DashboardsStyled>
         <div className="container">
+            <header className="dashboard-page-header">
+                <h1>Data Visualization Applications</h1>
+            </header>
             <section className="dashboard">
                 <iframe title="AUS_Manufacturing_2018-2021 - Total Values" width="800" height="486" 
                     src="https://app.powerbi.com/view?r=eyJrIjoiODM1ODU4ZmUtZmJmMy00ZGY3LWE0NGEtZDEwOGJiNjJiMmUxIiwidCI6IjgyZTU5MGM4LWY1NGEtNGM5NC04M2I3LTVkNzZlOGVlYzhkMSJ9" 
                     frameBorder="0" allowFullScreen={true}>
                 </iframe>
             </section>
-            <aside className="navigation"></aside>
             <section className="grid">
             <div className="card">
                 <img src="/images/military-dashboard.png" alt="global military dashboard"/>

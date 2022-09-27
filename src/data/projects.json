@@ -2,7 +2,7 @@
     "developer":[
         {
             "title":"Data Analytics", 
-            "intro":"Dynamic data dashboards that provide strategic insigt.",
+            "intro":"Demo projects using Data Analytics techniques, focusing in Data Visualization, using JavaScript, Python and PowerBI.",
             "link":"/dashboards",
             "imgUrl":"/images/mining-dashboard.png", 
             "tags":[
@@ -13,26 +13,27 @@
         },
         {
             "title":"Single Page Applications", 
-            "intro":"Create SPA web applications using React JS.",
+            "intro":"Demo applications developed using HTML, CSS, JavaScript and ReactJS framework.",
             "link":"/singlepage",
-            "imgUrl":"https://www.netsolutions.com/insights/wp-content/uploads/2020/02/single-page-applications-traditional-page-cycle-vs-spa-lifecycle.jpg",
+            "imgUrl":"/images/spa.png",
             "tags":[
                 {"tag":"#ReactJS","topic":"developer"}, 
                 {"tag":"#FrontendDev","topic":"developer"}, 
-                {"tag":"#WebDev","topic":"developer"}
+                {"tag":"#BackendDev","topic":"developer"}
             ]
         }
     ], 
     "engineer":[
         {
-            "title":"Industrial IoT Automation", 
-            "intro":"Monitor Industrial systems in real time. ",
+            "title":"Industrial IoT & Automation", 
+            "intro":"Demo systems built using the combination of IoT and Industrial Automation technologies. ",
             "link":"/iot",
-            "imgUrl":"https://www.i-scoop.eu/wp-content/uploads/2016/11/Industrial-Internet-of-Things.gif",
+            "imgUrl":"/images/iot2.png",
             "tags":[
                 {"tag":"#Iot","topic":"engineer"}, 
-                {"tag":"#IndustrialAutomation","topic":"engineer"},
-                {"tag":"#DevOps", "topic":"developer"} 
+                {"tag":"#IIoT", "topic":"engineer"},
+                {"tag":"#Industry 4.0", "topic":"engineer"},
+                {"tag":"#IndustrialAutomation","topic":"engineer"}
             ]
         } 
     ]
