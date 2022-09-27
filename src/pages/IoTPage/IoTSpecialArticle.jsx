@@ -10,6 +10,10 @@ const IotSpecialArticleStyled = styled.div`
     padding-top: 32px;
     padding-bottom: 32px;
 
+    h1 {
+        margin-bottom: 16px;
+    }
+
     section {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
