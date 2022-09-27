@@ -8,6 +8,11 @@ const IoTSectionStyled = styled.section`
     margin: 0 auto;
     border-top:1px solid #e5e5e5; 
     border-bottom: 1px solid #e5e5e5;
+
+    h2, h3, p {
+        color:#e5e5e5 !important;
+    }
+
     h2 {
         margin-bottom: 8px;
         font-size: 32px;
@@ -22,6 +27,7 @@ const IoTSectionStyled = styled.section`
     p {
         color: #e5e5e5;
         text-align: justify;
+        line-height: 150%;
     }
 `
 

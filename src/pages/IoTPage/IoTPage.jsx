@@ -4,6 +4,7 @@ import {engineer} from "../../styles/themes";
 // CUSTOM COMPONENTS
 import IoTHeader from "./IoTHeader";
 import IoTSection from "./IotSection";
+import IoTSpecialArticle from "./IoTSpecialArticle";
 
 // DATA
 import sections from "./data/sections.json";
@@ -39,6 +40,7 @@ const IoTPage = () => {
         <IoTHeader/>
         <main className="iot-main">
             <div className="iot-content">
+                <IoTSpecialArticle/>
                 {sections.map((section)=>{
                     return <IoTSection key={section.id}
                     videoUrl={section.videoUrl}

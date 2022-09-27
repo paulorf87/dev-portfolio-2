@@ -107,7 +107,7 @@ const Home = () => {
         <footer className="footer">
             <Footer/>
         </footer>
-        <Modal modalOpen={modalOpen} modalHandlerClose={modalHandlerClose}/>
+        <Modal modalOpen={modalOpen} modalHandlerClose={modalHandlerClose} modalHandlerOpen={modalHandlerOpen}/>
     </HomeStyled>
 }
 

@@ -1,7 +1,7 @@
 {
     "profile":{
         "intro-title":"Engineer Portfolio (Production-Automation)",
-        "intro-message":"I am a passionate, industrial engineer and self-taught computer programmer, who believes in the merge of IT (Information Technology) and OT (Operational Technology) as the way for the future. I am continuously improving my skills in Front-end and Back-end development, among other computer science fields, in order to build optimized soultions for businesses and non-profit endeavors.",
+        "intro-message":"I am a passionate industrial engineer and self-taught computer programmer, who believes in the combination of IT (Information Technology) and OT (Operational Technology) as the way for the future. I am continuously improving my skills in Frontend and Backend development, Data Analytics, IoT, Industrial Automation, among other topics in computer science and engineering fields, in order to build optimized soultions for businesses and other organizations, this way contributing to the global productivity growth.",
         "role":"Industrial Engineering | Automation", 
         "background-image":"/images/eng-banner.svg"
     },

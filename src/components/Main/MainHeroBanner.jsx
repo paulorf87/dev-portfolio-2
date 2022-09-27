@@ -29,7 +29,7 @@ const ContentStyled = styled.div`
     position: absolute;
     width: fit-content;
     z-index: 10;
-    padding:32px;
+    padding: 32px;
     display: flex;
     h2,h3,p {color:white; margin-bottom:16px}
     p {

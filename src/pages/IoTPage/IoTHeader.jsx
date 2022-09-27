@@ -24,6 +24,8 @@ const IoTHeaderStyled = styled.header`
         text-align: justify;
         margin: 0 auto;
         margin-bottom: 16px;
+        line-height: 150%;
+        font-size: 18px;
     }
     span {
         color:${engineer.colors.accent};

@@ -41,12 +41,35 @@ const ModalStyled = styled.dialog`
         background: linear-gradient(45deg, red, blue);
         opacity:.45;
     }
-`;
+    `;
 
-const Modal = ({modalOpen, modalHandlerClose}) => {
+const Modal = ({modalOpen, modalHandlerClose, modalHandlerOpen}) => {
     const modalRef = useRef(null); 
-
+    
     useEffect(()=>{
+        // Helper function
+        const handleEscEvent = e => {
+            if(e.key === "Escape") {
+                handleModalClose();
+            }
+        }
+
+        const handleModalClose = () => {
+            try {
+                modalRef.current.close(); 
+                modalHandlerClose();
+            } catch (error) {
+                //pass
+            }
+        }
+
+        const handleModalOpen = ()=> {
+            modalRef.current.showModal(); 
+            modalHandlerOpen();
+        }
+        
+        document.addEventListener("keydown", handleEscEvent);
+        
         if(modalOpen){
             try {
                 handleModalOpen();
@@ -57,23 +80,13 @@ const Modal = ({modalOpen, modalHandlerClose}) => {
             handleModalClose(); 
         }
 
+        // Cleaning
         return () =>{
+            document.removeEventListener("keydown", handleEscEvent);
             handleModalClose();
         }
 
-    }, [modalOpen]); 
-
-    const handleModalOpen = ()=> {
-        modalRef.current.showModal(); 
-    }
-
-    const handleModalClose = () => {
-        try {
-            modalRef.current.close(); 
-        } catch (error) {
-            //pass
-        }
-    }
+    }, [modalOpen, modalHandlerClose, modalHandlerOpen]); 
 
     return <ModalStyled ref={modalRef} onClick={modalHandlerClose}>
         <h2>Contact</h2>
