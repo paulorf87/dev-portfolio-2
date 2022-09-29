@@ -1,6 +1,4 @@
 import styled from "styled-components";
-
-
 import { CvIcon, GitHubIcon, LinkedInIcon } from "./Icons";
 
 
@@ -27,7 +25,7 @@ const SocialMedia = () => {
                 <a href="https://github.com/paulorf87" target="blank">
                     <GitHubIcon/>
                 </a>
-                <a href="/docs/dev-resume.pdf" target="blank">
+                <a href="https://prmf-portfolio.s3.ap-southeast-2.amazonaws.com/dev-resume.pdf" target="blank">
                     <CvIcon/>
                 </a>
         </SocialMediaStyled>

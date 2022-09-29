@@ -41,14 +41,17 @@ const IoTPage = () => {
         <main className="iot-main">
             <div className="iot-content">
                 <IoTSpecialArticle/>
-                {sections.map((section)=>{
+
+                
+                {/* {sections.map((section)=>{
                     return <IoTSection key={section.id}
                     videoUrl={section.videoUrl}
                     imgUrl={section.imgUrl}
                     title={section.title}
                     subtitle={section.subtitle}
                     text={section.text}/>
-                })}
+                })} */}
+                
             </div>
         </main>
     </AutomationPageStyled>

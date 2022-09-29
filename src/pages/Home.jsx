@@ -10,6 +10,7 @@ import Footer from "../components/Footer/Footer";
 import ProjectGrid from "../components/ProjectsGrid/ProjectsGrid";
 import SocialMedia from "../components/General/SocialMedia";
 import Modal from "../components/Modal/Modal";
+import Contacts from "../components/Contacts/Contacts";
 
 const HomeStyled = styled.div`
     margin: 0 auto;
@@ -79,7 +80,6 @@ const HomeStyled = styled.div`
 const Home = () => {
     const {profile} = useSelector(state=>state.data);
     const [modalOpen, setModalOpen] = useState(false);
-    
     const modalHandlerOpen = () => {
         setModalOpen(true); 
     }
@@ -107,7 +107,9 @@ const Home = () => {
         <footer className="footer">
             <Footer/>
         </footer>
-        <Modal modalOpen={modalOpen} modalHandlerClose={modalHandlerClose} modalHandlerOpen={modalHandlerOpen}/>
+        <Modal modalOpen={modalOpen} modalHandlerClose={modalHandlerClose} modalHandlerOpen={modalHandlerOpen}>
+            <Contacts/>
+        </Modal>
     </HomeStyled>
 }
 

@@ -15,7 +15,7 @@
             "title":"Single Page Applications", 
             "intro":"Demo applications developed using HTML, CSS, JavaScript and ReactJS framework.",
             "link":"/singlepage",
-            "imgUrl":"/images/spa.png",
+            "imgUrl":"/images/spa-banner.jpg",
             "tags":[
                 {"tag":"#ReactJS","topic":"developer"}, 
                 {"tag":"#FrontendDev","topic":"developer"}, 
