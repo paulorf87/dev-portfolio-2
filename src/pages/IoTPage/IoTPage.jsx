@@ -3,11 +3,11 @@ import {engineer} from "../../styles/themes";
 
 // CUSTOM COMPONENTS
 import IoTHeader from "./IoTHeader";
-import IoTSection from "./IotSection";
+// import IoTSection from "./IotSection";
 import IoTSpecialArticle from "./IoTSpecialArticle";
 
 // DATA
-import sections from "./data/sections.json";
+// import sections from "./data/sections.json";
 
 const AutomationPageStyled = styled.div`
     display: flex;

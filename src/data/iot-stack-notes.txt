@@ -1,0 +1,37 @@
+Things: Sensors and actuators. 
+Sensors are devices used to measure a physical property (e.g. temperature, 
+distance, position, etc) and convert it into an output signal. 
+Actuators, on the other hand, are responsible for controlling a mechanism or 
+system through action/movement (e.g. motors, valves, cylinders, etc). 
+
+Communications Network: Responsible for the data transfer between the things 
+and application. There are 4 subdivisions to this layer:
+1 Access sublayer: responsible for the last connection, or “last-mile network”, 
+between nodes (sensors and actuators) and the network backhaul. Power restrictions
+of many devices, which can be battery operated, make technologies with low energy 
+consumption and low throughput a very popular choice for this sublayer, 
+such as Low Energy Bluetooth (BLE), for short distances, to LoRa (Long Range) 
+for distances in a scale of kilometres. 
+
+
+2 Gateways and Backhaul: Here is where the bulk of data, coming from many devices 
+and gateways, merge and flows before going over the Internet. 
+Therefore, technologies with higher data throughput of data necessary 
+in this stage. For example, Ethernet (wired) can be used as backhaul 
+in layouts where changes are not constant such as factories and oil rigs, 
+whereas WiFi (2.4Ghz or 5Ghz) can be used in mining operations.
+
+3 Network Transport: This layer is responsible for the transference of 
+data packets between client/server via TCP or UDP protocols. 
+
+4 IoT Management:  This layer concerns the protocols of data transmission 
+between the devices and other IoT systems. The main protocol used for this 
+communication is MQTT (Message Queuing Telemetry). 
+
+Application: Where the data is finally transformed into information by some 
+application, which can trigger actions or used in the decision making process. 
+
+
+ 
+
+
