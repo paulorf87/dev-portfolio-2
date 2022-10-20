@@ -29,6 +29,7 @@ const Framework = () => {
             <CustomIcon src={"/images/css.svg"}/>
             <CustomIcon src={"/images/sass.svg"}/>
             <CustomIcon src={"/images/js.svg"}/>
+            <CustomIcon src={"/images/typescript.svg"}/>
             <CustomIcon src={"/images/nodejs.svg"}/>
             <CustomIcon src={"/images/react.svg"}/>
             <CustomIcon src={"/images/graphql.svg"}/>
@@ -40,6 +41,7 @@ const Framework = () => {
             <CustomIcon src={"/images/python.svg"}/>
             <CustomIcon src={"/images/docker.svg"}/>
             <CustomIcon src={"/images/git.svg"}/>
+            <CustomIcon src={"/images/gitlab.svg"}/>
             <CustomIcon src={"/images/figma.svg"}/>
             <CustomIcon src={"/images/cplus.svg"}/>
         </div>

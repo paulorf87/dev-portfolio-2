@@ -1,8 +1,8 @@
+import { useState, useEffect } from "react"; 
 import styled from "styled-components";
 
 import SinglePageCard from "./components/SinglePageCard";
 
-import data from "./data/spa-data.json"; 
 
 const SinglePageProjectsStyled = styled.main`
     max-width    : 1440px;
@@ -25,16 +25,20 @@ const SinglePageProjectsStyled = styled.main`
     `
 
 const SinglePageProjects = () => {
-
-    // {imgUrl, link, tags}
-
+    const [projects, setProjects] = useState(null); 
+    useEffect(()=>{
+        fetch("https://prmf-portfolio.s3.ap-southeast-2.amazonaws.com/spa-projects.json")
+        .then(res=>res.text())
+        .then(data=>setProjects(JSON.parse(data)))
+        .catch(err=>console.error(err))
+    },[]); 
 
     return <SinglePageProjectsStyled>
         <header className="single-page-header">
             <h1>Single Page Applications</h1>
         </header>
         <section className="single-page-grid">
-            {data.map((spa, index)=>{
+            {projects?.map((spa, index)=>{
                 return <SinglePageCard 
                 key={index}
                 imgUrl={spa.imgUrl}
